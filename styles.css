@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Josefin sans", sans-serif;
+    font-size: large;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 16px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #778899;
+}
+
+header h1 {
+    color: #ffffff;
+    font-family: 'Arvo', sans-serif;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #dedede;
+    text-decoration: none;
+}
+
+main {
+    margin: 32px 60px;
+    display: flex;
+    gap: 40px;
+}
+
+main picture img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 60%;
+}
+
+main section h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 40px;
+}
+
+main ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+main ul li {
+    list-style: none;
+}
+
+main ul li a {
+    color: #000000;
+}
+
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background-color: #778899;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer {
+    margin: 16px 60px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #778899;
+}
+
+footer ul {
+    padding: 8px 14px;
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+footer form label input {
+    outline: none;
+    font-size: 24px;
+    border-bottom: 2px solid #778899;
+}
+
+@media only screen and (max-width: 575px) {
+    header ul {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 75px;
+        flex-direction: column;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 75px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    footer form {
+        width: 100%;
+    }
+
+    footer form input {
+        width: 100%;
+    }
+
+}

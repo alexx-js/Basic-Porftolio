@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dylan Alexander</title>
+</head>
+<body>
+    <header>
+        <h1>Dylan Alexander</h1>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="https:/github.com/alexx-js" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </header>
+    <main id="about">
+        <picture>
+            <img src="https://avatars.githubusercontent.com/u/121050297?v=4" alt="ourPhoto">
+        </picture>
+        <section>
+            <h2>About</h2>
+            <p>
+                Hello <span id="name"></span>, dolor sit amet, consectetur adipisicing elit. Iure, itaque. Aliquam, velit quas pariatur, error enim ex voluptates nihil voluptatem temporibus illo, labore nostrum beatae necessitatibus exercitationem blanditiis totam impedit.
+                <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ea in quaerat? Vero atque nemo nam tempora quibusdam. Hic repellendus eligendi aut. Culpa suscipit inventore atque labore esse ipsam assumenda!
+            </p>
+            <ul>
+                <li>
+                    <a href="https:/github.com/alexx-js" target="_blank" id="github">GitHub <img src="img/arrow-bar-right.svg" alt=""> </a>
+                </li>
+                <li>
+                    <a href="#footer">My Social Networks</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <section>
+            <h3>Social Networks</h3>
+            <ul>
+                <li>
+                    <a href="https:/github.com/alexx-js" target="_blank">
+                        <img src="img/github (1).svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/linkedin.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <form>
+            <label for="name">
+                <input type="text" name="name" placeholder="Name:" required onkeyup="mostrar(this.value)">
+            </label>
+        </form>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
